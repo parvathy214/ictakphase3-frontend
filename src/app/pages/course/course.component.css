@@ -1,0 +1,27 @@
+#main{
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 100px;
+}
+.card-title{
+    text-align: center;
+}
+.card{
+   
+    width: 50%;
+}
+.card-text{
+    /* justify-content: ; */
+    text-align: justify;
+    padding-left: 2px;
+    padding-right: 2px;
+
+
+}
+.card-body {
+    height: 200px;
+    overflow-y:auto; 
+}
+body{
+    background-image: url("../../../assets/acqua.jpg");
+}

@@ -1,0 +1,32 @@
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.navbar-brand,.nav-link, .nav-link.active{
+  color:rgb(1, 6, 10);
+}
+.navbar-brand img {
+  width: 100px;
+  height: 90px; /* maintains aspect ratio */
+}
+.container-fluid{
+  height: 80px;
+}
+
+.nav-link {
+  transition: transform 0.2s ease-out; /* add transition effect */
+}
+
+.nav-link:hover {
+  transform: scale(1.2); /* zoom in on hover */
+
+}
+
+.btn-outline-secondary:hover {
+  color: white;
+  background-color: rgb(179, 194, 201);
+  border: 1px solid blue;
+}
