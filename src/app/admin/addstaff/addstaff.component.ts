@@ -26,10 +26,18 @@ export class AddstaffComponent {
       adduser(){
         
         let user = this.addUserForm.value
-        this.api.addsiteUser(user).subscribe((res: any) => {
+        this.api.addsiteUser(user).subscribe(
+          (res: any) => {
           console.log(res)
     
           this.router.navigate(['/users'])
+        },
+        (error) =>{
+          if(error.status === 400){
+            alert('User already exists');
+          }else{
+            console.error(error)
+          }
         })
       }
 
