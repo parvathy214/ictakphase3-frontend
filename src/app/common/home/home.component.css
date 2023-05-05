@@ -114,3 +114,14 @@ body {
     margin-top: 7rem;
   }
 }
+.col-lg-4 {
+  text-align: center; /* Align the content of each column to the center */
+}
+
+.col-lg-4 h4 {
+  margin-top: 20px; /* Add some space between the image and the text */
+  color:#323274;;
+  font-size: 18px; /* Set the font size for the text */
+  font-weight: bold; /* Set the font weight for the text */
+  text-transform: sentence; /* Capitalize the text */}
+

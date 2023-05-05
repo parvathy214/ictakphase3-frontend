@@ -9,6 +9,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AdmindashboardComponent {
   user: any = [];
+  Trainerhead: number = 0;
+  placementofcr : number=0;
+  
   constructor(private api:BackendService, private route:Router){}
 
   ngOnInit() {
@@ -19,6 +22,14 @@ export class AdmindashboardComponent {
       console.log("incoming data")
       this.user=res
       console.log(this.user)
+      const counttrainer = this.user.filter((user:any) => user.role === 'Trainer Head');
+        console.log(counttrainer); // Check if there are any items in the filtered array
+        this.Trainerhead = counttrainer.length;
+        const countplacement = this.user.filter((user:any) => user.role === 'Placement Officer');
+        console.log(countplacement); // Check if there are any items in the filtered array
+        this. placementofcr= countplacement.length;
+
+
     })
   }
   deleteUser(id:any){
