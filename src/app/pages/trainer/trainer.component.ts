@@ -10,6 +10,8 @@ import { Location } from '@angular/common';
 })
 export class TrainerComponent {
  learner:any
+ completedCount: number = 0;
+ placedLearnersCount : number=0;
   constructor(private api:BackendService, private route:Router,private location:Location){}
 
     ngOnInit() {
@@ -27,6 +29,14 @@ export class TrainerComponent {
         console.log("incoming data")
         this.learner=res.data
         console.log(this.learner)
+        const qualifiedLearners = this.learner.filter((learner:any) => learner.coursestatus === 'Qualified');
+        console.log(qualifiedLearners); // Check if there are any items in the filtered array
+        this.completedCount = qualifiedLearners.length;
+
+        const placedLearners = this.learner.filter((learner:any) => learner.placementstatus === 'Placed');
+        console.log(placedLearners); // Check if there are any items in the filtered array
+        this.placedLearnersCount = placedLearners.length;
+        
       })
     }
     editlearner(id:any){
