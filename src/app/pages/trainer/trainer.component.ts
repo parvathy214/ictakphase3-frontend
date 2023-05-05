@@ -10,10 +10,12 @@ import { Location } from '@angular/common';
 })
 export class TrainerComponent {
  learner:any
+
   constructor(private api:BackendService, private route:Router,private location:Location){}
 
     ngOnInit() {
       this.getData()
+     
     }
     goBack(): void {
       this.location.back();
@@ -43,6 +45,8 @@ export class TrainerComponent {
       localStorage.removeItem('token')
       this.route.navigate(['/']);
     }
+
+    
   }
 
 
