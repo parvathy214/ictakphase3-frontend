@@ -22,17 +22,17 @@
 .card-counter.danger{
   background-color: #ef5350;
   color: #FFF;
-}  
+}
 
 .card-counter.success{
   background-color: #66bb6a;
   color: #FFF;
-}  
+}
 
 .card-counter.info{
   background-color: #26c6da;
   color: #FFF;
-}  
+}
 
 .card-counter i{
   font-size: 5em;
@@ -41,8 +41,8 @@
 
 .count-numbers{
   position: absolute;
-  
-  
+
+
 }
 
 .card-counter .count-name{
@@ -65,7 +65,7 @@
 body {
     font-size: .875rem;
   }
-  
+
 
 .table thead tr {
 
@@ -104,7 +104,7 @@ table tbody tr:nth-child(even) {
 
 
 .table {
-  border: 1px solid rgb(205, 227, 192); 
+  border: 1px solid rgb(205, 227, 192);
 }
 /* .tabf{
   padding: auto;
@@ -112,7 +112,8 @@ table tbody tr:nth-child(even) {
 } */
 
 .sidebar {
-  position: fixed;
+  position: relative;
+  z-index: 7;
   top: 0;
   /* rtl:raw:
   right: 0;
