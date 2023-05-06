@@ -25,7 +25,7 @@
           font-size: 3.5rem;
         }
       }
-      
+
       #b1{
         background-color: #0e2b35;
         color:white;
@@ -41,13 +41,13 @@
     </style>
   </head>
   <body>
-    
+
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
   <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"  >ICTAK Learner Tracker</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
- 
+
   <div class="navbar-nav">
     <div class="nav-item text-nowrap">
       <button class="btn btn-outline-secondary" style="color: white;" type="button" (click)="logout()">Logout</button>
@@ -67,21 +67,21 @@
                Learner Dashboard
             </a>
           </li>  -->
-          
+
           <li class="nav-item">
             <a class="nav-link text-white" aria-current="page"  (click)="goBack()"  >
               <span data-feather="home"  ></span>
                Home
             </a>
-          </li> 
+          </li>
           <li class="nav-item">
             <a class="nav-link text-white" routerLink="/course"  >
               <span data-feather="file"></span>
                Course Details
             </a>
-          </li>    
-                
-        </ul>      
+          </li>
+
+        </ul>
       </div>
     </nav>
 
@@ -106,7 +106,7 @@
             <span class="count-name">Learners</span>
           </div>
         </div>
-      
+
         <div class="col-md-3">
           <div class="card-counter danger">
             <i class="fa fa-ticket"></i>
@@ -114,7 +114,7 @@
             <span class="count-name">Qualified Learners</span>
           </div>
         </div>
-      
+
         <div class="col-md-3">
           <div class="card-counter success">
             <i class="fa fa-database"></i>
@@ -122,12 +122,12 @@
             <span class="count-name">Placed</span>
           </div>
         </div>
-        
+
       </div>
       </div>
-      
+
       <div class="container">
-         
+
       <table class="table table-striped  mt-5">
         <thead>
           <tr>
@@ -140,7 +140,7 @@
             <th scope="col">Placement Status</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
-      
+
           </tr>
         </thead>
         <tbody>
@@ -150,7 +150,7 @@
             <td class="tabf">{{item.course}}</td>
             <td class="tabf">{{item. project}}</td>
             <td class="tabf">{{item. batch}}</td>
-            <td class="">    
+            <td class="">
             <div class="button-wrapper">
                 <button class="edit-button" [ngStyle]="{'background-color': item.coursestatus === 'Incompetent' ? '#dc3545' : '#198754'}">{{item. coursestatus}}</button>
               </div></td>
@@ -159,18 +159,19 @@
                 <button class="edit-button"[ngStyle]="{'background-color': item.placementstatus === 'Placed' ? '#198754': item.placementstatus === 'Job Seeking' ? '#ffc107' : '#dc3545'}">{{item. placementstatus}}</button>
               </div></td>
             <td class="tabf"><i class="bi bi-pencil-square text-primary"(click)="editlearner(item._id)"></i></td>
-            <td class="tabf"><i class="bi bi-trash3-fill text-danger" (click)="deletelearner(item._id)"></i></td> 
-          </tr>   
+            <td class="tabf"><i class="bi bi-trash3-fill text-danger" (click)="deletelearner(item._id)"></i></td>
+          </tr>
         </tbody>
       </table>
-      </div> 
-      
+      </div>
+
       <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-   
+
     </main>
   </div>
 </div>
 
   </body>
+  <app-footer></app-footer>
 </html>
 

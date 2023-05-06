@@ -10,25 +10,21 @@ import { Location } from '@angular/common';
 })
 export class TrainerComponent {
  learner:any
-<<<<<<< HEAD
-
-=======
  completedCount: number = 0;
  placedLearnersCount : number=0;
->>>>>>> 46875aa445eaeb408c03073a0cdbec8dbb61e264
   constructor(private api:BackendService, private route:Router,private location:Location){}
 
     ngOnInit() {
       this.getData()
-     
+
     }
     goBack(): void {
       this.location.back();
     }
-    
-   
-    
-    
+
+
+
+
     getData(){
       this.api.getData().subscribe((res:any)=>{
         console.log("incoming data")
@@ -41,11 +37,11 @@ export class TrainerComponent {
         const placedLearners = this.learner.filter((learner:any) => learner.placementstatus === 'Placed');
         console.log(placedLearners); // Check if there are any items in the filtered array
         this.placedLearnersCount = placedLearners.length;
-        
+
       })
     }
     editlearner(id:any){
-      
+
       this.route.navigate(['update',id])
     }
     deletelearner(id:any){
@@ -59,7 +55,7 @@ export class TrainerComponent {
       this.route.navigate(['/']);
     }
 
-    
+
   }
 
 

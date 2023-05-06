@@ -25,6 +25,8 @@ import { TokenInterceptorService } from './token-interceptor.service';
 import { AuthGuard } from './auth.guard';
 import { CommonModule } from '@angular/common';
 import { CourseComponent } from './pages/course/course.component';
+import { FooterComponent } from './common/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { CourseComponent } from './pages/course/course.component';
     PlacementstatusComponent,
     PlacementheaderComponent,
     CourseComponent,
+    FooterComponent,
+
 
   ],
   imports: [
