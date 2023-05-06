@@ -22,17 +22,17 @@
 .card-counter.danger{
   background-color: #ef5350;
   color: #FFF;
-}
+}  
 
 .card-counter.success{
   background-color: #66bb6a;
   color: #FFF;
-}
+}  
 
 .card-counter.info{
   background-color: #26c6da;
   color: #FFF;
-}
+}  
 
 .card-counter i{
   font-size: 5em;
@@ -41,8 +41,8 @@
 
 .count-numbers{
   position: absolute;
-
-
+  
+  
 }
 
 .card-counter .count-name{
@@ -112,8 +112,7 @@ table tbody tr:nth-child(even) {
 } */
 
 .sidebar {
-  position: relative;
-  z-index: 7;
+  position: fixed;
   top: 0;
   /* rtl:raw:
   right: 0;
@@ -148,7 +147,6 @@ table tbody tr:nth-child(even) {
 .sidebar .nav-link .feather {
   margin-right: 4px;
   color: #727272;
-
 }
 
 .sidebar .nav-link.active {
@@ -160,15 +158,15 @@ table tbody tr:nth-child(even) {
   color: inherit;
 }
 
-.nav-link:hover {
-  cursor: pointer;
-}
-
 .sidebar-heading {
   font-size: .75rem;
   text-transform: uppercase;
 
 }
+.nav-link:hover {
+  cursor: pointer;
+}
+
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -214,8 +212,8 @@ table tbody tr:nth-child(even) {
   /* background-color: #ffc107; */
   border: 1px  white;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-  /* color: beige; */
   color: rgb(40, 33, 33);
+  border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -225,15 +223,6 @@ table tbody tr:nth-child(even) {
 }
 .card-counter:hover{
   transform: scale(1.1); /* zoom in on hover */
-}
-/* .button-wrapper.placed {
-  background-color: green;
+
 }
 
-.job-seeking.button-wrapper {
-  background-color: yellow;
-}
-
-.not-interested.button-wrapper {
-  background-color: red;
-} */
