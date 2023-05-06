@@ -35,31 +35,31 @@ export class BackendService {
   //learner
 
   getData() {
-    return this.http.get(`${this.api}/learner`)
+    return this.http.get(`${this.api}/api`)
     }
 
   addLearner(learner:any){
-    return this.http.post(`${this.api}/learner`,learner)
+    return this.http.post(`${this.api}/api`,learner)
   }
 
 
   updateLearner(learner:any,id:any){
     console.log(id)
-  return this.http.put(`${this.api}/learner/${id}`,learner)
+  return this.http.put(`${this.api}/api/${id}`,learner)
 }
   
 deletelearner(id:any){
-  return this.http.delete(`${this.api}/learner/${id}`)
+  return this.http.delete(`${this.api}/api/${id}`)
  }
 
  addcsv(formdata:any){
   
-  return this.http.post(`${this.api}/learner/file`,formdata)
+  return this.http.post(`${this.api}/api/file`,formdata)
  }
 
  getcurrent(id:any){
   console.log(`backend service id is ${id}`)
- return this.http.get(`${this.api}/learner/${id}`)
+ return this.http.get(`${this.api}/api/${id}`)
 }
 
 gettoken() :boolean{
