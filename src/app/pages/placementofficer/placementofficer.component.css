@@ -221,4 +221,8 @@ table tbody tr:nth-child(even) {
   width: 100%; /* make the button fill the wrapper */
 
 }
+.card-counter:hover{
+  transform: scale(1.1); /* zoom in on hover */
+
+}
 

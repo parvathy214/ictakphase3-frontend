@@ -3,6 +3,13 @@
     margin-left: 300px;
     margin-right: 100px;
 }
+nav{
+    background-color: rgb(220, 235, 245);
+  }
+.navbar-brand img {
+    width: 100px;
+    height: 80px; /* maintains aspect ratio */
+  }
 .card-title{
     text-align: center;
 }
@@ -22,6 +29,7 @@
     height: 200px;
     overflow-y:auto; 
 }
-body{
+/* .body{
     background-image: url("../../../assets/acqua.jpg");
-}
+    background-color: bisque;
+} */

@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:'csv',component:UploadfileComponent},
   {path:'placement',canActivate:[AuthGuard],component:PlacementofficerComponent},
   {path:'edit-status-placement/:id', canActivate:[AuthGuard],component:PlacementstatusComponent},
-  {path:'course',canActivate:[AuthGuard],component:CourseComponent}
+  {path:'course',component:CourseComponent}
 
 ];
 

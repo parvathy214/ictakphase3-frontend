@@ -10,12 +10,8 @@ import { Location } from '@angular/common';
 })
 export class TrainerComponent {
  learner:any
-<<<<<<< HEAD
-
-=======
  completedCount: number = 0;
  placedLearnersCount : number=0;
->>>>>>> 46875aa445eaeb408c03073a0cdbec8dbb61e264
   constructor(private api:BackendService, private route:Router,private location:Location){}
 
     ngOnInit() {

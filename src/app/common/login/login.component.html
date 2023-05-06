@@ -1,35 +1,54 @@
-<style>
-    .container {
-    background-image: url('assets/bg1.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 580px;
-   
-  }
-</style>
-<div class="container pt-5 mt-5">
-    <h1 class="text-center text-dark">Login</h1>
-    <div class="row justify-content-center pt-5 mt-5">
-        <div class="col-6">
-            
-            <form [formGroup]="Login">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
-               
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
-                </div>
-                <div class="mb-3 form-check">
-                  <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-                  </div>
-                <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
-              </form>
-        </div>
+
+ <header>
+  <nav class="navbar navbar-expand-md navbar  fixed-top ">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="/assets/new.jpeg" alt="Logo"></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0"  style="margin-right: 20px;">
+          <li class="nav-item">
+            <a class="nav-link active" type="button"  aria-current="page"  routerLink=""   style="margin-right: 20px;color: blue; ">Home</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" type="button" routerLink="/course"  style="color: blue;" >Courses</a>
+          </li>
+        </ul>
+     
+      </div>
     </div>
-</div>
+  </nav>
+</header>
+ <section class="vh-100" style="margin-top: 200px;" >
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="../../../assets/loginpage.avif"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form [formGroup]="Login">
+          <h1 class="text-center" style="color: rgb(150, 143, 143);">LOGIN</h1>
+         <br>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+          </div>
 
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+          </div>
+         <br>
+          <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
 
-
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>

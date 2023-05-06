@@ -1,5 +1,10 @@
-
-  
+nav{
+  background-color: rgb(220, 235, 245);
+}
+.navbar-brand img {
+  width: 100px;
+  height: 90px; /* maintains aspect ratio */
+}
   h1 {
     color: #fff;
     text-align: center;

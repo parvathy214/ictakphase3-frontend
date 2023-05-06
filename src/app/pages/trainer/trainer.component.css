@@ -222,14 +222,8 @@ table tbody tr:nth-child(even) {
   width: 100%; /* make the button fill the wrapper */
 
 }
-/* .button-wrapper.placed {
-  background-color: green;
+.card-counter:hover{
+  transform: scale(1.1); /* zoom in on hover */
+
 }
 
-.job-seeking.button-wrapper {
-  background-color: yellow;
-}
-
-.not-interested.button-wrapper {
-  background-color: red;
-} */

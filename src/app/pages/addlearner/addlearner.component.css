@@ -12,15 +12,14 @@
     width: 100%;
 }
 form{
-    /* margin-left: 150px; */
-    /* width: 70%; */
-    /* height: 100%; */
+   
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: transparent;
+    /* background-color: transparent; */
     /* border-radius: 0.2em ; */
+    background-color: #fff;
     border-radius: 10px;
     border: 2px solid  rgb(205, 210, 213) ;
     margin-bottom: 100px;

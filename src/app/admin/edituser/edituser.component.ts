@@ -25,7 +25,7 @@ export class EdituserComponent {
              this.EditUserForm = new FormGroup({
                'name': new FormControl((result as any).name),
                'email': new FormControl((result as any).email),
-               'password': new FormControl((result as any).password),
+              //  'password': new FormControl((result as any).password),
                'role': new FormControl((result as any).role)
              })
            }))
