@@ -270,43 +270,5 @@ body {
     width: 100%; /* make the button fill the wrapper */
 
   }
-  .card-counter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* margin-top: 50px ; */
-    margin-bottom: 50px;
-    background-color: #ffc107;
-
-
-  }
-  .card-counter:hover{
-    transform: scale(1.1); /* zoom in on hover */
-
-  }
-  #card1{
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-right: 100px;
-  }
-  #card2{
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-left: 100px;
-  }
- .count-name{
-  margin: 0;
-  padding: 0;
- 
- }
- .count-numbers{
-  margin: 0;
-  padding: 0;
-  padding-bottom:10px ;
-  color: white;
- }
-         
  
 
